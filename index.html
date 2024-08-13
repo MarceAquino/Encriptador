@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Encriptador Alura</title>
+</head>
+<body class="body">
+    <header class="header">
+        <h1 class="titulo">Desencriptador de texto</h1>
+        <img src="asset\aluraoracle.png" alt="Logo de alura" class="logo">
+    </header>
+    <main>
+        <section class="cajas">
+            <textarea class="text-area"  cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <textarea class="mensaje" cols="30" rows="10"></textarea>
+        </section>
+        <section class="sub-button">
+            <img src="asset/exclamacion.png" alt="signo de exclamacion" class="exclamacion">
+            <h6 class="informacion">Solo letras minúsculas y sin acento</h6>
+        </section>
+        <section>
+            <div class="button">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                <button onclick="btnCopiar()" class="copiar">Copiar</button>
+            </div>    
+        </section>
+    </main>
+    <footer class="footer">Desarrolado por Marcelo Aquino</footer>
+<script src="script.js"></script>    
+</body>
+</html>
