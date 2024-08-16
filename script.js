@@ -1,6 +1,7 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
 
+
 const matrizCodigo = [
     ["e", "enter"],
     ["i", "imes"],
@@ -27,7 +28,7 @@ function encriptar(texto, matriz) {
 }
 
 function desencriptar(texto, matriz) {
-    texto = texto.toLowerCase();
+    
     for (let i = 0; i < matriz.length; i++) {
         if (texto.includes(matriz[i][1])) {
             texto = texto.replaceAll(matriz[i][1], matriz[i][0]);

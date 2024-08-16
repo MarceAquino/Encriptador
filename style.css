@@ -6,37 +6,37 @@
 }
 
 .header {
-    gap: 5%; /* Ajuste de gap para mayor flexibilidad */
+    gap: 5%; 
     box-shadow: 0 0 10px #353333 transparent; 
     display: flex;
     justify-content: space-between;
-    margin: 2vh 2vw; /* Margen relativo a la ventana */
+    margin: 2vh 2vw; 
 }
 
 .logo {
-    width: 20vw; /* Relativo al ancho de la pantalla */
-    margin-right: 10%; /* Margen derecho relativo */
+    width: 20vw; 
+    margin-right: 10%; 
     filter: drop-shadow(0 0 10px #7a2d2d);
 }
 
 .titulo {
     color: #333333;
-    font-size: 3vw; /* Fuente relativa al ancho de la pantalla */
-    margin-left: 3.50vw; /* Margen izquierdo relativo */
+    font-size: 3vw; 
+    margin-left: 3.50vw; 
     text-shadow: 0 0 10px #7a2d2d;
 }
 
 .cajas {
     display: flex;
     justify-content: space-between;
-    margin: 0 5vw; /* Margen relativo a la ventana */
-    height: 50vh; /* Altura relativa a la ventana */
+    margin: 0 5vw; 
+    height: 50vh; 
 }
 
 .text-area, .mensaje {
     width: 40%;
     box-shadow: 0 0 10px #333333;
-    font-size: 2vw; /* Tamaño de fuente relativo */
+    font-size: 2vw; 
     font-family: "Ubuntu", sans-serif;
     padding: 2vw;
     box-sizing: border-box;
@@ -47,7 +47,7 @@
     box-shadow: 0 0 10px #333333;
     font-size: 2vw;
     font-family: "Ubuntu", sans-serif;
-    background: linear-gradient(transparent, #dbd1d1), url('asset/secreto.png'); /* Añadir imagen de fondo */
+    background: linear-gradient(transparent, #dbd1d1), url('asset/secreto.png'); 
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -57,47 +57,46 @@
 .sub-button {
     display: flex;
     align-items: center;
-    height: 5vh; /* Altura relativa */
+    height: 5vh; 
     margin: 1vw 0 1vw 5vw;
 }
 
 .informacion {
-    font-size: 1.5vw; /* Tamaño de fuente relativo */
+    font-size: 1.5vw; 
     font-style: italic;
 }
 
 .exclamacion {
-    height: 2vh; /* Altura relativa */
+    height: 2vh; 
 }
 
 .copiar, .btn-encriptar, .btn-desencriptar {
-    width: 13vw; /* Ancho relativo */
-    height: 8vh; /* Altura relativa */
+    width: 13vw; 
+    height: 8vh; 
     border-radius: 20px;
     font-family: "New Amsterdam";
-    letter-spacing: 0.1vw; /* Espaciado relativo */
-    font-size: 2vw; /* Tamaño de fuente relativo */
+    letter-spacing: 0.1vw; 
+    font-size: 2vw;
     background: linear-gradient(transparent, #ece8e8);
     text-shadow: 0 0 10px #7a2d2d;
     color: #180303;
     border: 0.2vw solid #180303;
-    margin: 0 auto; /* Centra los botones horizontalmente */
+    margin: 0 auto; 
 }
 
 .button {
     display: flex;
-    justify-content: center; /* Centra los botones en la fila */
+    justify-content: center; 
     margin-bottom: 3vh;
     gap: 3vw;
     box-shadow: 0 0 10px #353333 transparent;
 }
-/* Efecto hover para cambiar el color */
+
 .copiar:hover, .btn-encriptar:hover, .btn-desencriptar:hover {
-    background: linear-gradient(transparent, #d4c2c2); /* Cambia el color de fondo en hover */
-    border-color: #7a2d2d; /* Cambia el color del borde en hover */
+    background: linear-gradient(transparent, #d4c2c2);
+    border-color: #7a2d2d;
 }
 
-/* Efecto de pulsación */
 @keyframes buttonPress {
     0% {
         transform: scale(1);
@@ -111,21 +110,21 @@
 }
 
 .copiar:active, .btn-encriptar:active, .btn-desencriptar:active {
-    animation: buttonPress 0.3s ease; /* Aplica la animación de pulsación */
-    background: linear-gradient(transparent, #bfa1a1); /* Cambia ligeramente el color al hacer clic */
+    animation: buttonPress 0.3s ease; 
+    background: linear-gradient(transparent, #bfa1a1); 
 }
 
 .footer {
     background: transparent;
     display: flex;
     justify-content: flex-end;
-    padding: 3vh 2vw; /* Padding relativo */
-    font-size: 1.5vw; /* Tamaño de fuente relativo */
+    padding: 3vh 2vw; 
+    font-size: 1.5vw; 
     box-sizing: border-box;
     width: 100%;
 }
 
-/* Media queries para ajustar el diseño en pantallas pequeñas */
+
 @media (max-width: 768px) {
     .titulo {
         font-size: 4vw;
@@ -133,31 +132,31 @@
     }
 
     .cajas {
-        flex-direction: column; /* Coloca los cuadros de texto en columna */
-        align-items: center; /* Centra los cuadros de texto */
-        margin: 0; /* Elimina los márgenes */
+        flex-direction: column; 
+        align-items: center; 
+        margin: 0; 
     }
 
     .text-area, .mensaje {
-        width: 90%; /* Ajusta el ancho para pantallas pequeñas */
-        height: 60vh; /* Incrementa la altura */
-        margin-bottom: 2vh; /* Añade espacio entre los cuadros de texto */
+        width: 90%;
+        height: 60vh; 
+        margin-bottom: 2vh;
     }
 
     .informacion {
         font-size: 3.5vw;
-        margin: 0; /* Reduce el margen superior e inferior */
+        margin: 0; 
         text-align: center;
     }
 
     .button {
-        flex-direction: column; /* Coloca los botones en columna */
-        align-items: center; /* Centra los botones */
-        margin-top: 2vh; /* Añade un poco de margen superior */
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 2vh; 
     }
 
     .copiar, .btn-encriptar, .btn-desencriptar {
-        width: 70%; /* Ajusta el ancho de los botones */
-        margin-bottom: 2vh; /* Espacio entre botones */
+        width: 70%; 
+        margin-bottom: 2vh; 
     }
 }
