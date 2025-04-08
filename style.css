@@ -144,7 +144,7 @@
     }
 
     .informacion {
-        font-size: 10vw;
+        font-size: 3.5vw;
         margin: 0; 
         text-align: center;
     }
@@ -152,7 +152,8 @@
     .button {
         flex-direction: column; 
         align-items: center; 
-        margin-top: 2vh; 
+        margin-top: 2vh;f ;
+        font-size: 8vw
     }
 
     .copiar, .btn-encriptar, .btn-desencriptar {
