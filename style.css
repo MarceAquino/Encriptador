@@ -141,6 +141,7 @@
         width: 90%;
         height: 60vh; 
         margin-bottom: 2vh;
+        font-size: 8vw;
     }
 
     .informacion {
@@ -159,6 +160,6 @@
     .copiar, .btn-encriptar, .btn-desencriptar {
         width: 70%; 
         margin-bottom: 2vh; 
-         font-size: 8vw;
+        
     }
 }
