@@ -154,12 +154,12 @@
         flex-direction: column; 
         align-items: center; 
         margin-top: 2vh;
-        font-size: 8vw;
+        
     }
 
     .copiar, .btn-encriptar, .btn-desencriptar {
         width: 70%; 
         margin-bottom: 2vh; 
-        
+        font-size: 8vw;
     }
 }
